@@ -4,6 +4,11 @@ package main.java.ieseuropa;
 import java.util.Scanner;
 
 public class CadenaDeTexto {
+	private static String pedirString(String texto) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print(texto);		
+		return sc.nextLine();		
+	}
 	private static int pedirInt(String texto) {
 		Scanner sc = new Scanner(System.in);
 		int num = 0;
@@ -36,9 +41,9 @@ public class CadenaDeTexto {
 		String str1 = "Este es el primer String.";
 		String str2 = "Este es el segundo String.";
 		repetirStrings(str1, str2, pedirInt("Introduzca la cantidad de veces que quiere que se repitan los Strings."));
-		System.out.println(repetirLetra("NBA"));
-		String str3 = "Real";
-		String str4 = "Real Zaragoza es de la realeza";
+		System.out.println(repetirLetra(pedirString("Introduzca la palabra:")));
+		String str3 = pedirString("Introduzca la palabra:");
+		String str4 = pedirString("Introduzca el texto:");
 		System.out.println(borrarApariciones(str4, str3).trim());
 	}
 

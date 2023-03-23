@@ -1,19 +1,9 @@
 
 package main.java.ieseuropa;
 
+import java.util.Arrays;
+
 public class Numeros {
-	private static int pedirInt(String texto) {
-		Scanner sc = new Scanner(System.in);
-		int num = 0;
-		System.out.println(texto);
-		while (!sc.hasNextInt()) {
-			sc.next();
-			System.out.print("Debe introducir un numero entero, por favor: ");
-		}
-		num = sc.nextInt();
-		sc.nextLine();
-		return num;
-	}
 	private static int[] calcularSeriePell() {
 		int[] seriePell = new int[15];
 		seriePell[0]=0;

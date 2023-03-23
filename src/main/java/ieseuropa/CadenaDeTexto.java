@@ -1,7 +1,21 @@
 
 package main.java.ieseuropa;
 
+import java.util.Scanner;
+
 public class CadenaDeTexto {
+	private static int pedirInt(String texto) {
+		Scanner sc = new Scanner(System.in);
+		int num = 0;
+		System.out.println(texto);
+		while (!sc.hasNextInt()) {
+			sc.next();
+			System.out.print("Debe introducir un numero entero, por favor: ");
+		}
+		num = sc.nextInt();
+		sc.nextLine();
+		return num;
+	}
 	private static void repetirStrings(String Str1, String Str2, int num) {
 		for(int i = 0; i < num; i++) {
 			System.out.println(Str1);

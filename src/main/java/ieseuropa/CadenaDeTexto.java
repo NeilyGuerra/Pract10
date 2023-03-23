@@ -39,7 +39,7 @@ public class CadenaDeTexto {
 
 	public static void main(String[] args) {
 		String str1 = "Este es el primer String.";
-		String str2 = "Este es el segundo String.";
+		String str2 = "Este es el segundo String. ";
 		repetirStrings(str1, str2, pedirInt("Introduzca la cantidad de veces que quiere que se repitan los Strings."));
 		System.out.println(repetirLetra(pedirString("Introduzca la palabra:")));
 		String str3 = pedirString("Introduzca la palabra:");

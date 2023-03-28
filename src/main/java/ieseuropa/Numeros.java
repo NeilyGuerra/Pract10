@@ -42,6 +42,11 @@ public class Numeros {
 		}
 		return resultado;
 	}
+	private static void horasMinutosSegundos(int segundos) {
+		System.out.print("Horas: "+(segundos/3600));
+		System.out.print(" Minutos: "+(segundos%3600)/60);
+		System.out.println(" Segundos: "+(segundos % 60));
+	}
 	public static void main(String[] args) {
 		System.out.println(Arrays.toString(calcularSeriePell()));
 		int num = 153;
@@ -50,6 +55,8 @@ public class Numeros {
 		
 		int factorial = 3;
 		System.out.println("El factorial de "+factorial+" es "+factorial(factorial));
+		
+		horasMinutosSegundos(3680);
 	}
 
 }

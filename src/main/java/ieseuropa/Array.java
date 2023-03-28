@@ -3,7 +3,11 @@ package main.java.ieseuropa;
 import java.util.Arrays;
 
 public class Array {
-	
+
+	public static void ordenarArray(double[] numeros) {
+	    Arrays.sort(numeros);
+	}	
+
 	public static double calcularMinimo(double[] numeros) {
 	    double minimo = numeros[0];
 	    for (int i = 1; i < numeros.length; i++) {
@@ -35,10 +39,14 @@ public class Array {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		double[]numeros = {1,2,3,4,5,6,7,8,9};
-		System.out.println(calcularMediana(numeros);
-		System.out.println(calcularMedia(numeros);
-		System.out.println(calcularMinimo(numeros);
 
+		System.out.println(calcularMediana(numeros));
+		System.out.println(calcularMedia(numeros));
+		System.out.println(calcularMinimo(numeros));
+		ordenarArray(numeros);
+		System.out.println("El array ordenado es: " + Arrays.toString(numeros));
+		
+		
 	}
 
 }

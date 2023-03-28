@@ -17,7 +17,9 @@ public class CadenaDeTexto {
 	    String resultado = str1minus.replaceAll(str2minus, "");
 	    return resultado;
 	}
-
+	private static int longitudNombre(String nombre) {
+		return nombre.length();
+	}
 	public static void main(String[] args) {
 		String str1 = "Este es el primer String.";
 		String str2 = "Este es el segundo String.";
@@ -26,6 +28,8 @@ public class CadenaDeTexto {
 		String str3 = "Real";
 		String str4 = "Real Zaragoza es de la realeza";
 		System.out.println(borrarApariciones(str4, str3).trim());
+		
+		System.out.println(longitudNombre(str4));
 	}
 
 }

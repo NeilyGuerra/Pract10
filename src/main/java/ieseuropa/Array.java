@@ -38,6 +38,7 @@ public class Array {
 		System.out.println(calcularMediana(numeros);
 		System.out.println(calcularMedia(numeros);
 		System.out.println(calcularMinimo(numeros);
+
 	}
 
 }

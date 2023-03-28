@@ -47,6 +47,21 @@ public class Numeros {
 		System.out.print(" Minutos: "+(segundos%3600)/60);
 		System.out.println(" Segundos: "+(segundos % 60));
 	}
+	public static boolean esNumDeLaSuerte(int n) {
+		boolean temporal[]=new boolean[10]; 
+        for (int i = 0; i < 10; i++) 
+        	temporal[i] = false;
+        
+        while (n > 0) 
+        { 
+            int digito = n % 10;       
+            if (temporal[digito]) 
+            	return false;       
+            temporal[digito] = true;            
+			n /= 10; 
+        } 
+        return true; 
+ }	
 	public static void main(String[] args) {
 		System.out.println(Arrays.toString(calcularSeriePell()));
 		int num = 153;
@@ -57,6 +72,8 @@ public class Numeros {
 		System.out.println("El factorial de "+factorial+" es "+factorial(factorial));
 		
 		horasMinutosSegundos(3680);
+		int suerte = 25;
+		System.out.println("Es "+ suerte +" de la suerte: "+esNumDeLaSuerte(suerte));
 	}
 
 }

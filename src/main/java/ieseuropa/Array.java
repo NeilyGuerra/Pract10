@@ -4,6 +4,16 @@ import java.util.Arrays;
 
 public class Array {
 	
+	public static double calcularMinimo(double[] numeros) {
+	    double minimo = numeros[0];
+	    for (int i = 1; i < numeros.length; i++) {
+	        if (numeros[i] < minimo) {
+	            minimo = numeros[i];
+	        }
+	    }
+	    return minimo;
+	}
+
 	public static double calcularMediana(double[] numeros) {
 	    Arrays.sort(numeros);
 	    int mitad = numeros.length / 2;
@@ -27,6 +37,8 @@ public class Array {
 		double[]numeros = {1,2,3,4,5,6,7,8,9};
 		System.out.println(calcularMediana(numeros);
 		System.out.println(calcularMedia(numeros);
+		System.out.println(calcularMinimo(numeros);
+
 	}
 
 }

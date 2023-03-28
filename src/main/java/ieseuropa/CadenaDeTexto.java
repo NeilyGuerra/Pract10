@@ -20,6 +20,14 @@ public class CadenaDeTexto {
 	private static int longitudNombre(String nombre) {
 		return nombre.length();
 	}
+	private static int ocurrenciasLetra(String cadena, char letra) {
+		int contador = 0;
+		for (int i = 0; i < cadena.length(); i++) {
+			if (cadena.charAt(i) == letra)
+				contador++;
+		}
+		return contador;
+	}
 	public static void main(String[] args) {
 		String str1 = "Este es el primer String.";
 		String str2 = "Este es el segundo String.";
@@ -30,6 +38,8 @@ public class CadenaDeTexto {
 		System.out.println(borrarApariciones(str4, str3).trim());
 		
 		System.out.println(longitudNombre(str4));
+		
+		System.out.println(ocurrenciasLetra(str4, 'e'));
 	}
 
 }

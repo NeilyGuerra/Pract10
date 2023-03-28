@@ -4,19 +4,21 @@ import java.util.Arrays;
 
 public class Array {
 	
-	public static double calcularMediana(double[] numeros) {
-	    Arrays.sort(numeros);
-	    int mitad = numeros.length / 2;
-	    if (numeros.length % 2 == 0) {
-	        return (numeros[mitad - 1] + numeros[mitad]) / 2;
-	    } else {
-	        return numeros[mitad];
+	public static double calcularMinimo(double[] numeros) {
+	    double minimo = numeros[0];
+	    for (int i = 1; i < numeros.length; i++) {
+	        if (numeros[i] < minimo) {
+	            minimo = numeros[i];
+	        }
 	    }
+	    return minimo;
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("Hola");
+		double[]a = {1,2,4,6};
+		
+		System.out.print(calcularMinimo(a));
 	}
 
 }

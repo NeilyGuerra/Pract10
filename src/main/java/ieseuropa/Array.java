@@ -16,9 +16,7 @@ public class Array {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		double[]a = {1,2,4,6};
 		
-		System.out.print(calcularMinimo(a));
 	}
 
 }

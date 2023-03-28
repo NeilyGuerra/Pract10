@@ -13,10 +13,20 @@ public class Array {
 	        return numeros[mitad];
 	    }
 	}
+	
+	public static double calcularMedia(double[] numeros) {
+	    double suma = 0;
+	    for (int i = 0; i < numeros.length; i++) {
+	        suma += numeros[i];
+	    }
+	    return suma / numeros.length;
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("Hola");
+		double[]numeros = {1,2,3,4,5,6,7,8,9};
+		System.out.println(calcularMediana(numeros);
+		System.out.println(calcularMedia(numeros);
 	}
 
 }

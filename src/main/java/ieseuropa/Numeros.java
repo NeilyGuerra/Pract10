@@ -1,6 +1,9 @@
 
 package main.java.ieseuropa;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class Numeros {
 	private static int pedirInt(String texto) {
 		Scanner sc = new Scanner(System.in);
@@ -30,8 +33,6 @@ public class Numeros {
 			suma += Math.pow(digito, longitud);
 			aux /=  10;
 		}
-		System.out.println("Num OG " + numero);
-		System.out.println("Suma " + suma);
 		if(suma == numero)return true;
 		else return false;
 	}
@@ -44,7 +45,7 @@ public class Numeros {
 	}
 	public static void main(String[] args) {
 		System.out.println(Arrays.toString(calcularSeriePell()));
-		int num = 153;
+		int num = pedirInt("Introduzca un número:");
 		if(esAmstrong(num)) System.out.println("El número " + num + " es un número Amstrong.");
 		else System.out.println("El número " + num + " no es un número Amstrong.");
 		

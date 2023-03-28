@@ -35,21 +35,12 @@ public class Numeros {
 		if(suma == numero)return true;
 		else return false;
 	}
-	private static int factorial(int num) {
-		int resultado=1;
-		for(int i = num;i>1;i--) {
-			resultado*= i;
-		}
-		return resultado;
-	}
+
 	public static void main(String[] args) {
 		System.out.println(Arrays.toString(calcularSeriePell()));
 		int num = 153;
 		if(esAmstrong(num)) System.out.println("El número " + num + " es un número Amstrong.");
 		else System.out.println("El número " + num + " no es un número Amstrong.");
-		
-		int factorial = 3;
-		System.out.println("El factorial de "+factorial+" es "+factorial(factorial));
 	}
 
 }

@@ -36,12 +36,20 @@ public class Numeros {
 		if(suma == numero)return true;
 		else return false;
 	}
+
 	private static int factorial(int num) {
 		int resultado=1;
 		for(int i = num;i>1;i--) {
 			resultado*= i;
 		}
 		return resultado;
+	}
+	private static boolean esPrimo (int num) {
+		for(int i=2 ;i<num;i++) {
+			if(num%i==0) 
+				return false ;	
+		}
+		return true;
 	}
 	public static void main(String[] args) {
 		System.out.println(Arrays.toString(calcularSeriePell()));
@@ -51,6 +59,8 @@ public class Numeros {
 		
 		int factorial = 3;
 		System.out.println("El factorial de "+factorial+" es "+factorial(factorial));
+		int primo = 5;
+		System.out.println("es "+primo+" primo: "+esPrimo(primo));
 	}
 
 }
